@@ -23,7 +23,7 @@ class CreateEntriesTable extends Migration
             $table->foreignId("visitor_id")->constrained("visitors");
             $table->foreignId("reason_id")->constrained("reasons");
             $table->text("observation")->nullable();
-            $table->string("image_path")->default("Background.png");
+            $table->string("image_path")->nullable();
             $table->timestamps();
         });
     }

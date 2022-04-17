@@ -29,6 +29,7 @@ class EntriesTableSeeder extends Seeder
                 'controller'            => '',
                 'generate_permissions'  => 1,
                 'description'           => '',
+                'server_side'           => 1
             ])->save();
         }
 
